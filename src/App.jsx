@@ -9,7 +9,7 @@ import Milk from "./Milk";
 import { useDispatch, useSelector } from "react-redux";
 import Orders from "./Orders";
 import { logout } from "./store";
-import Login from "./login";
+import Login from "./Login";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { 
   faHome, faCarrot, faDrumstickBite, faShoppingCart, 
