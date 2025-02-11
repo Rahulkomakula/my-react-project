@@ -5,7 +5,7 @@ import NonVeg from "./Nonveg";
 import About from "./About";
 import Cart from "./Cart";
 import "./App.css";
-import Milk from "./milk";
+import Milk from "./Milk";
 import { useDispatch, useSelector } from "react-redux";
 import Orders from "./Orders";
 import { logout } from "./store";
@@ -21,7 +21,7 @@ import { faFacebook, faTwitter, faInstagram } from "@fortawesome/free-brands-svg
 function App() {
   const isauthenticated = useSelector((state) => state.auth.isauthenticated);
   const user = useSelector((state) => state.auth.user);
-
+  
   let dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
   const totalitems = cart.reduce((sum, item) => sum + item.quantity, 0);
